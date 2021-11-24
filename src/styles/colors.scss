@@ -1,0 +1,28 @@
+$first: #5927e5;
+$second: #007068;
+$third: #963900;
+$lighten: 5;
+$darken: 25;
+
+$colors: (
+  first: (
+    base: $first,
+    light: lighten($first, $lighten),
+    dark: darken($first, $darken),
+  ),
+  second: (
+    base: $second,
+    light: lighten($second, $lighten),
+    dark: darken($second, $darken),
+  ),
+  third: (
+    base: $third,
+    light: lighten($third, $lighten),
+    dark: darken($third, $darken),
+  ),
+);
+
+@function clr($base, $shade: base) {
+  $color: map-get(map-get($colors, $base), $shade);
+  @return $color;
+}

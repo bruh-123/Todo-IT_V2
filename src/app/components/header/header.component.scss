@@ -1,0 +1,25 @@
+@use "../../../styles/colors";
+@use "sass:map";
+
+header {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: clr(first);
+}
+
+.btn {
+  display: inline-block;
+  background: clr(first);
+  color: white;
+  border: transparent;
+  padding: 0.3rem 0.75rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: blue;
+}
