@@ -9,5 +9,6 @@ import { MaterialModule } from '../material.module';
 @NgModule({
   declarations: [HomeComponent, SignupComponent, LoginComponent],
   imports: [CommonModule, ComponentsModule, MaterialModule],
+  exports:[ComponentsModule]
 })
 export class PagesModule {}
