@@ -6,7 +6,11 @@ import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'login',
+    component: LoginComponent,
+  },
+  {
+    path: 'home',
     component: HomeComponent,
   },
   {
@@ -14,12 +18,8 @@ const routes: Routes = [
     component: SignupComponent,
   },
   {
-    path: 'login',
-    component: LoginComponent,
-  },
-  {
     path: '**',
-    redirectTo: '',
+    redirectTo: 'login',
   },
 ];
 

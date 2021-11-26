@@ -1,0 +1,45 @@
+<div class="body">
+  <div class="login">
+    <mat-spinner
+      *ngIf="isLoading"
+      class="spinner"
+      [diameter]="50"
+    ></mat-spinner>
+    <form *ngIf="!isLoading" [formGroup]="loginform" (ngSubmit)="ingresar()">
+      <img src="../../../assets/user.png" alt="" width="50%" />
+      <h1>login</h1>
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput autocomplete="off" formControlName="email" />
+        <mat-icon matSuffix>alternate_email</mat-icon>
+      </mat-form-field>
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Contraseña</mat-label>
+        <input
+          [type]="hide ? 'password' : 'text'"
+          matInput
+          autocomplete="off"
+          formControlName="password"
+        />
+        <button mat-icon-button matSuffix (click)="hide = !hide">
+          <mat-icon>{{ hide ? "visibility" : "visibility_off" }}</mat-icon>
+        </button>
+      </mat-form-field>
+      <button
+        [disabled]="loginform.invalid"
+        type="submit"
+        mat-raised-button
+        class="btn"
+        color="primary"
+      >
+        Iniciar Sesión
+      </button>
+      <p>
+        No tienes cuenta?
+        <a [routerLink]="['/signup']" routerLinkActive="router-link-active"
+          >Registrate</a
+        >
+      </p>
+    </form>
+  </div>
+</div>
