@@ -5,10 +5,11 @@ import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [InicioSesionComponent, FooterComponent],
+  declarations: [InicioSesionComponent, FooterComponent, HeaderComponent],
   imports: [CommonModule, MaterialModule, RouterModule, ReactiveFormsModule],
-  exports: [InicioSesionComponent],
+  exports: [InicioSesionComponent, FooterComponent, HeaderComponent],
 })
 export class ComponentsModule {}

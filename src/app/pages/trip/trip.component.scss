@@ -1,0 +1,30 @@
+main{
+   min-height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5rem 0;
+}
+
+.form-trip{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 80%;
+   height: auto;
+   max-width: 20.5rem;
+   background-color: bisque;
+}
+.form-trip form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.field{
+   width: 90%;
+}
+.btn {
+  width: 90%;
+  margin-bottom: 1rem;
+}

@@ -1,1 +1,21 @@
-<p>home works!</p>
+<app-header></app-header>
+<main>
+  <h1>Bienvenid@ {{ user }}</h1>
+  <h3>Aquí hay algunas cosas que podrian interesarte</h3>
+
+  <!-- Agregar un grid con columnas colapsables -->
+  <mat-card class="news-card">
+    <mat-card-title-group>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Small</mat-card-subtitle>
+      <img
+        mat-card-sm-image
+        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+      />
+    </mat-card-title-group>
+    <mat-card-content>
+      {{ longText }}
+    </mat-card-content>
+  </mat-card>
+</main>
+<app-footer></app-footer>

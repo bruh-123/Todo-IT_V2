@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { TripComponent } from './trip/trip.component';
 import { StateComponent } from './state/state.component';
 import { RecordComponent } from './record/record.component';
+import { MaterialModule } from '../material.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,7 @@ import { RecordComponent } from './record/record.component';
     StateComponent,
     RecordComponent,
   ],
-  imports: [CommonModule, ComponentsModule, ],
-  exports:[]
+  imports: [CommonModule, ComponentsModule, MaterialModule,ReactiveFormsModule],
+  exports:[ComponentsModule]
 })
 export class PagesModule {}
