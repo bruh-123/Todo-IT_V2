@@ -1,6 +1,5 @@
 main {
-  height: 100%;
-  max-height: auto;
+  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +7,28 @@ main {
   text-align: center;
   padding: 3rem 2rem;
 }
+.content {
+  display: grid;
+  gap: 2rem 2rem;
+}
 
+@media (min-width: 640px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1280px) {
+  .content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .news-card {
+  width: 16rem;
   background-color: bisque;
+  display: block;
 }
