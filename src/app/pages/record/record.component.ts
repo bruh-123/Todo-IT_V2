@@ -3,42 +3,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { TripData } from 'src/app/interfaces/tripData';
 
 const TRIP_DATA: TripData[] = [
-  {
-    fecha: new Date(2021, 3, 15),
-    marca: 'Hydrogen',
-    modelo: 'zxrl8',
-    estadoEquipo: 'Reparado',
-    estadoEnvio: 'Entregado',
-    entrega:new Date(2021,3,18)
-  },
-  {
-    fecha: new Date(2021, 3, 15),
-    marca: 'Helium',
-    modelo: 'zxrl8',
-    estadoEquipo: 'Reparado',
-    estadoEnvio: 'Retirado',
-  },
-  {
-    fecha: new Date(2021, 3, 15),
-    marca: 'Lithium',
-    modelo: 'zxrl8',
-    estadoEquipo: 'Reparado',
-    estadoEnvio: 'Retirado',
-  },
-  {
-    fecha: new Date(2021, 3, 15),
-    marca: 'Lithium',
-    modelo: 'zxrl8',
-    estadoEquipo: 'Reparado',
-    estadoEnvio: 'Retirado',
-  },
-  {
-    fecha: new Date(2021, 3, 15),
-    marca: 'Lithium',
-    modelo: 'zxrl8',
-    estadoEquipo: 'Reparado',
-    estadoEnvio: 'Retirado',
-  },
+  
   {
     fecha: new Date(2021, 3, 15),
     marca: 'Lithium',

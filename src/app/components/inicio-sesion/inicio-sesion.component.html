@@ -1,11 +1,11 @@
 <main>
-  <mat-card class="login">
-    <mat-spinner
-      *ngIf="isLoading"
-      class="spinner"
-      [diameter]="50"
-    ></mat-spinner>
-    <form *ngIf="!isLoading" [formGroup]="loginform" (ngSubmit)="ingresar()">
+  <mat-spinner
+    *ngIf="isLoading"
+    class="spinner"
+    [diameter]="50"
+  ></mat-spinner>
+  <mat-card *ngIf="!isLoading" class="login">
+    <form [formGroup]="loginform" (ngSubmit)="ingresar()">
       <img src="../../../assets/user.png" alt="" width="50%" />
       <h1>login</h1>
       <mat-form-field class="field" appearance="fill">

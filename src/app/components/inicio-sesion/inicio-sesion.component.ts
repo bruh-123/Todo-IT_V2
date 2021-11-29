@@ -1,22 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicio-sesion',
   templateUrl: './inicio-sesion.component.html',
   styleUrls: ['./inicio-sesion.component.scss'],
 })
-export class InicioSesionComponent implements OnInit {
+export class InicioSesionComponent {
   hide = true;
   isLoading = false;
   loginform: FormGroup;
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private router: Router) {
     this.loginform = this.fb.group({
       email: ['', [Validators.email, Validators.required]],
       password: ['', Validators.required],
     });
   }
-  ngOnInit(): void {}
 
   ingresar() {
     console.log(this.loginform);
@@ -26,7 +26,7 @@ export class InicioSesionComponent implements OnInit {
   loadingTrucho() {
     this.isLoading = true;
     setTimeout(() => {
-      this.isLoading = false;
+      this.router.navigate(['home']);
     }, 2000);
   }
 }

@@ -1,0 +1,168 @@
+{
+  "Users": [
+    {
+      "id": 1,
+      "email": "administrador@gmail.com",
+      "fullName": "Pedro Bustos Romero",
+      "address": "Unión, San luis, Argentina",
+      "cellPhone": "+5691112345678",
+      "isAccepted": true,
+      "isDeleted": false,
+      "observations": "Administrador del sistema",
+      "password": "123456",
+      "vehicle": null,
+      "rol": {
+        "id": 1,
+        "name": "Administrador",
+        "isDeleted": 0
+      }
+    },
+    {
+      "id": 2,
+      "email": "hola@gmail.com",
+      "fullName": "sadsadsa",
+      "address": "asdasd",
+      "cellPhone": "asdasd",
+      "isAccepted": true,
+      "isDeleted": false,
+      "observations": null,
+      "password": "asdsa",
+      "vehicle": null,
+      "rol": {
+        "id": 3,
+        "name": "Usuario final",
+        "isDeleted": 0
+      }
+    },
+    {
+      "id": 3,
+      "email": "kevinmunozmende@gmail.com",
+      "fullName": "kevincito",
+      "address": "calle falsa 123",
+      "cellPhone": "asdasd493123",
+      "isAccepted": true,
+      "isDeleted": true,
+      "observations": null,
+      "password": "k4956623",
+      "vehicle": null,
+      "rol": {
+        "id": 3,
+        "name": "Usuario final",
+        "isDeleted": 0
+      }
+    },
+    {
+      "id": 4,
+      "email": "adasd@gor.com",
+      "fullName": "dsad",
+      "address": "adsa",
+      "cellPhone": "asdas",
+      "isAccepted": false,
+      "isDeleted": true,
+      "observations": null,
+      "password": "adas",
+      "vehicle": null,
+      "rol": {
+        "id": 3,
+        "name": "Usuario final",
+        "isDeleted": 0
+      }
+    },
+    {
+      "id": 5,
+      "email": "JAJA@gmail.com",
+      "fullName": "hola",
+      "address": "123",
+      "cellPhone": "123456789",
+      "isAccepted": false,
+      "isDeleted": false,
+      "observations": null,
+      "password": "asdsa",
+      "vehicle": null,
+      "rol": {
+        "id": 3,
+        "name": "Usuario final",
+        "isDeleted": 0
+      }
+    },
+    {
+      "fullName": "Riquelme Bruno",
+      "email": "jajaja@ejemplo",
+      "password": "12345678910",
+      "address": "av. Callefalsa 123",
+      "cellPhone": "12345678",
+      "id": 6
+    },
+    {
+      "fullName": "asdasd",
+      "email": "Riquelme@g",
+      "password": "0989",
+      "address": "asdas",
+      "cellPhone": "987654321",
+      "id": 7
+    },
+    {
+      "fullName": "jkgfjh",
+      "email": "fgdfvbgfjk@dfjh",
+      "password": "sdfngkejn5345",
+      "address": "smdfkls",
+      "cellPhone": "3468756347",
+      "id": 8
+    },
+    {
+      "fullName": "Riquelme Bruno",
+      "email": "epaepa@asa.com",
+      "password": "jiouii768",
+      "address": "Las calles 321",
+      "cellPhone": "987654321",
+      "id": 9
+    },
+    {
+      "fullName": "Riquelme Bruno",
+      "email": "esaDale@gmoil.chan",
+      "password": "254342545",
+      "address": "hshi",
+      "cellPhone": "12345678",
+      "id": 10
+    }
+  ],
+  "Travels": [
+    {
+      "fecha": "2021, 3, 15",
+      "marca": "Hydrogen",
+      "modelo": "zxrl8",
+      "estadoEquipo": "Reparado",
+      "estadoEnvio": "Entregado",
+      "entrega": "2021,3,18"
+    },
+    {
+      "fecha": "2021, 3, 15",
+      "marca": "Helium",
+      "modelo": "zxrl8",
+      "estadoEquipo": "Reparado",
+      "estadoEnvio": "Retirado"
+    },
+    {
+      "fecha": "2021, 3, 15",
+      "marca": "Lithium",
+      "modelo": "zxrl8",
+      "estadoEquipo": "Reparado",
+      "estadoEnvio": "Retirado",
+      "entrega": "2021,1,10"
+    },
+    {
+      "fecha": "2021, 3, 15",
+      "marca": "Lithium",
+      "modelo": "zxrl8",
+      "estadoEquipo": "Reparado",
+      "estadoEnvio": "Retirado"
+    },
+    {
+      "fecha": "2021, 3, 15",
+      "marca": "Lithium",
+      "modelo": "zxrl8",
+      "estadoEquipo": "Reparado",
+      "estadoEnvio": "Retirado"
+    }
+  ]
+}

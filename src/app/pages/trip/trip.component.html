@@ -2,7 +2,7 @@
 <main>
   <mat-card class="form-trip">
     <h1>Formulario de retiro</h1>
-    <form [formGroup]="formTrip">
+    <form [formGroup]="formTrip" (ngSubmit)="solicitarViaje()">
       <mat-form-field class="field" appearance="fill">
         <mat-label>Marca</mat-label>
         <input matInput formControlName="marca" />
@@ -15,20 +15,7 @@
         <mat-label>Falla</mat-label>
         <input matInput formControlName="falla" />
       </mat-form-field>
-      <mat-form-field class="field" appearance="fill">
-        <mat-label>Direccion</mat-label>
-        <input matInput formControlName="direccion" />
-      </mat-form-field>
-      <mat-form-field class="field" appearance="fill">
-        <mat-label>Fecha</mat-label>
-        <input [matDatepicker]="picker" matInput formControlName="fecha" />
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-      </mat-form-field>
-      <mat-form-field class="field" appearance="fill">
-        <mat-label>Horario</mat-label>
-        <input matInput formControlName="horario" />
-      </mat-form-field>
+      
       <button
         [disabled]="formTrip.invalid"
         type="submit"

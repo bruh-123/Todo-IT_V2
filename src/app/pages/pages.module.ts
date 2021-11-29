@@ -9,6 +9,7 @@ import { StateComponent } from './state/state.component';
 import { RecordComponent } from './record/record.component';
 import { MaterialModule } from '../material.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,13 @@ import { ReactiveFormsModule } from '@angular/forms';
     StateComponent,
     RecordComponent,
   ],
-  imports: [CommonModule, ComponentsModule, MaterialModule,ReactiveFormsModule],
-  exports:[ComponentsModule]
+  imports: [
+    CommonModule,
+    ComponentsModule,
+    MaterialModule,
+    ReactiveFormsModule,
+    RouterModule,
+  ],
+  exports: [ComponentsModule],
 })
 export class PagesModule {}
