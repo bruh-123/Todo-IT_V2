@@ -2,7 +2,7 @@
 <main>
   <mat-spinner *ngIf="isLoading" class="spinner" [diameter]="50"></mat-spinner>
   <mat-card *ngIf="!isLoading" class="signup">
-    <img src="../../../assets/signup.png" alt="signup" width="50%">
+    <img src="../../../assets/signup.png" alt="signup" width="50%" />
     <h2>Registrate!</h2>
     <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
       <mat-form-field class="field" appearance="fill">

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Validators, FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { SignUpService } from '../../services/sign-up.service';
+import { AlertService } from '../../services/alert.service';
 
 @Component({
   selector: 'app-signup',
@@ -15,7 +16,8 @@ export class SignupComponent {
   constructor(
     private signupservice: SignUpService,
     private fb: FormBuilder,
-    private router: Router
+    private router: Router,
+    private alert: AlertService
   ) {
     this.signupForm = this.fb.group({
       fullName: ['', Validators.required],
@@ -27,17 +29,17 @@ export class SignupComponent {
   }
 
   onSubmit(): void {
-    this.signupservice.save(this.signupForm.value).subscribe((resp) => {
-      console.log(resp);
-      this.signupForm.reset();
-    });
-    this.loadingTrucho();
-  }
-
-  loadingTrucho() {
     this.isLoading = true;
-    setTimeout(() => {
-      this.router.navigate(['login']);
-    }, 2000);
+    this.signupservice.save(this.signupForm.value).subscribe(
+      (resp) => {
+        console.log(resp);
+        this.signupForm.reset();
+        this.router.navigate(['/login']);
+      },
+      (error) => {
+        this.isLoading = false;
+        this.alert.failure(error.error);
+      }
+    );
   }
 }

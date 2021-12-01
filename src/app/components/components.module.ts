@@ -7,9 +7,26 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 
+
+
+
+
 @NgModule({
-  declarations: [InicioSesionComponent, FooterComponent, HeaderComponent],
-  imports: [CommonModule, MaterialModule, RouterModule, ReactiveFormsModule],
-  exports: [InicioSesionComponent, FooterComponent, HeaderComponent],
+  declarations: [
+    InicioSesionComponent,
+    FooterComponent,
+    HeaderComponent,
+  ],
+  imports: [
+    CommonModule,
+    MaterialModule,
+    RouterModule,
+    ReactiveFormsModule,
+  ],
+  exports: [
+    InicioSesionComponent,
+    FooterComponent,
+    HeaderComponent,
+  ],
 })
 export class ComponentsModule {}

@@ -1,9 +1,10 @@
 export interface TripData {
   id?: number;
-  fecha: Date;
+  fecha?: string;
   marca: string;
   modelo: string;
-  estadoEquipo: string;
-  estadoEnvio: string;
+  falla: string;
+  estadoEquipo?: string;
+  estadoEnvio?: string;
   entrega?: Date;
 }

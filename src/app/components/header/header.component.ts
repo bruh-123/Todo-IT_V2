@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   constructor() { }
-
+  signOut() {
+    localStorage.clear()
+  }
   ngOnInit(): void {
   }
 

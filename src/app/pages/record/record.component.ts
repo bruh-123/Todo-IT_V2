@@ -5,6 +5,8 @@ import { TripData } from 'src/app/interfaces/tripData';
 const TRIP_DATA: TripData[] = [
   
   {
+    id:2,
+    falla:"jojojo",
     fecha: new Date(2021, 3, 15),
     marca: 'Lithium',
     modelo: 'zxrl8',
@@ -12,6 +14,8 @@ const TRIP_DATA: TripData[] = [
     estadoEnvio: 'Retirado',
   },
   {
+    id:2,
+    falla:"jojojo",
     fecha: new Date(2021, 3, 15),
     marca: 'Lithium',
     modelo: 'zxrl8',
@@ -19,6 +23,8 @@ const TRIP_DATA: TripData[] = [
     estadoEnvio: 'Retirado',
   },
   {
+    id:2,
+    falla:"jojojo",
     fecha: new Date(2021, 3, 15),
     marca: 'Lithium',
     modelo: 'zxrl8',
@@ -26,6 +32,8 @@ const TRIP_DATA: TripData[] = [
     estadoEnvio: 'Retirado',
   },
   {
+    id:2,
+    falla:"jojojo",
     fecha: new Date(2021, 3, 15),
     marca: 'Lithium',
     modelo: 'zxrl8',
@@ -33,6 +41,8 @@ const TRIP_DATA: TripData[] = [
     estadoEnvio: 'Retirado',
   },
   {
+    id:2,
+    falla:"jojojo",
     fecha: new Date(2021, 3, 15),
     marca: 'Lithium',
     modelo: 'zxrl8',
@@ -40,6 +50,8 @@ const TRIP_DATA: TripData[] = [
     estadoEnvio: 'Retirado',
   },
   {
+    id:2,
+    falla:"jojojo",
     fecha: new Date(2021, 3, 15),
     marca: 'Lithium',
     modelo: 'zxrl8',
@@ -47,6 +59,8 @@ const TRIP_DATA: TripData[] = [
     estadoEnvio: 'Retirado',
   },
   {
+    id:2,
+    falla:"jojojo",
     fecha: new Date(2021, 3, 15),
     marca: 'Lithium',
     modelo: 'zxrl8',
@@ -54,6 +68,8 @@ const TRIP_DATA: TripData[] = [
     estadoEnvio: 'Retirado',
   },
   {
+    id:2,
+    falla:"jojojo",
     fecha: new Date(2021, 3, 15),
     marca: 'Lithium',
     modelo: 'zxrl8',
@@ -61,6 +77,8 @@ const TRIP_DATA: TripData[] = [
     estadoEnvio: 'Retirado',
   },
   {
+    id:2,
+    falla:"jojojo",
     fecha: new Date(2021, 3, 15),
     marca: 'Lithium',
     modelo: 'zxrl8',
@@ -68,6 +86,8 @@ const TRIP_DATA: TripData[] = [
     estadoEnvio: 'Retirado',
   },
   {
+    id:2,
+    falla:"jojojo",
     fecha: new Date(2021, 3, 15),
     marca: 'Lithium',
     modelo: 'zxrl8',
@@ -75,6 +95,8 @@ const TRIP_DATA: TripData[] = [
     estadoEnvio: 'Retirado',
   },
   {
+    id:2,
+    falla:"jojojo",
     fecha: new Date(2021, 3, 15),
     marca: 'Lithium',
     modelo: 'zxrl8',
@@ -82,6 +104,8 @@ const TRIP_DATA: TripData[] = [
     estadoEnvio: 'Retirado',
   },
   {
+    id:2,
+    falla:"jojojo",
     fecha: new Date(2021, 3, 15),
     marca: 'Lithium',
     modelo: 'zxrl8',
@@ -89,6 +113,8 @@ const TRIP_DATA: TripData[] = [
     estadoEnvio: 'Retirado',
   },
   {
+    id:2,
+    falla:"jojojo",
     fecha: new Date(2021, 3, 15),
     marca: 'Lithium',
     modelo: 'zxrl8',

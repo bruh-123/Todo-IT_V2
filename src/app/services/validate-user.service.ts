@@ -1,9 +1,16 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { User } from '../interfaces/users';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ValidateUserService {
-
-  constructor() { }
+  constructor(private http:HttpClient) {}
+  login(email: string, password: string): Observable<User> {
+    return this.http.get<User>(
+      'api/Login' + '?email=' + email + '&password=' + password
+    );
+  }
 }
