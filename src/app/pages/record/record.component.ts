@@ -1,134 +1,26 @@
 import { Component } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { TripData } from 'src/app/interfaces/tripData';
+import { Equipo } from '../../interfaces/equipo';
+import { TravelsService } from '../../services/travels.service';
 
-const TRIP_DATA: TripData[] = [
-  
-  {
-    id:2,
-    falla:"jojojo",
-    fecha: new Date(2021, 3, 15),
-    marca: 'Lithium',
-    modelo: 'zxrl8',
-    estadoEquipo: 'Reparado',
-    estadoEnvio: 'Retirado',
-  },
-  {
-    id:2,
-    falla:"jojojo",
-    fecha: new Date(2021, 3, 15),
-    marca: 'Lithium',
-    modelo: 'zxrl8',
-    estadoEquipo: 'Reparado',
-    estadoEnvio: 'Retirado',
-  },
-  {
-    id:2,
-    falla:"jojojo",
-    fecha: new Date(2021, 3, 15),
-    marca: 'Lithium',
-    modelo: 'zxrl8',
-    estadoEquipo: 'Reparado',
-    estadoEnvio: 'Retirado',
-  },
-  {
-    id:2,
-    falla:"jojojo",
-    fecha: new Date(2021, 3, 15),
-    marca: 'Lithium',
-    modelo: 'zxrl8',
-    estadoEquipo: 'Reparado',
-    estadoEnvio: 'Retirado',
-  },
-  {
-    id:2,
-    falla:"jojojo",
-    fecha: new Date(2021, 3, 15),
-    marca: 'Lithium',
-    modelo: 'zxrl8',
-    estadoEquipo: 'Reparado',
-    estadoEnvio: 'Retirado',
-  },
-  {
-    id:2,
-    falla:"jojojo",
-    fecha: new Date(2021, 3, 15),
-    marca: 'Lithium',
-    modelo: 'zxrl8',
-    estadoEquipo: 'Reparado',
-    estadoEnvio: 'Retirado',
-  },
-  {
-    id:2,
-    falla:"jojojo",
-    fecha: new Date(2021, 3, 15),
-    marca: 'Lithium',
-    modelo: 'zxrl8',
-    estadoEquipo: 'Reparado',
-    estadoEnvio: 'Retirado',
-  },
-  {
-    id:2,
-    falla:"jojojo",
-    fecha: new Date(2021, 3, 15),
-    marca: 'Lithium',
-    modelo: 'zxrl8',
-    estadoEquipo: 'Reparado',
-    estadoEnvio: 'Retirado',
-  },
-  {
-    id:2,
-    falla:"jojojo",
-    fecha: new Date(2021, 3, 15),
-    marca: 'Lithium',
-    modelo: 'zxrl8',
-    estadoEquipo: 'Reparado',
-    estadoEnvio: 'Retirado',
-  },
-  {
-    id:2,
-    falla:"jojojo",
-    fecha: new Date(2021, 3, 15),
-    marca: 'Lithium',
-    modelo: 'zxrl8',
-    estadoEquipo: 'Reparado',
-    estadoEnvio: 'Retirado',
-  },
-  {
-    id:2,
-    falla:"jojojo",
-    fecha: new Date(2021, 3, 15),
-    marca: 'Lithium',
-    modelo: 'zxrl8',
-    estadoEquipo: 'Reparado',
-    estadoEnvio: 'Retirado',
-  },
-  {
-    id:2,
-    falla:"jojojo",
-    fecha: new Date(2021, 3, 15),
-    marca: 'Lithium',
-    modelo: 'zxrl8',
-    estadoEquipo: 'Reparado',
-    estadoEnvio: 'Retirado',
-  },
-  {
-    id:2,
-    falla:"jojojo",
-    fecha: new Date(2021, 3, 15),
-    marca: 'Lithium',
-    modelo: 'zxrl8',
-    estadoEquipo: 'Reparado',
-    estadoEnvio: 'Retirado',
-  },
-  
-];
 @Component({
   selector: 'app-record',
   templateUrl: './record.component.html',
   styleUrls: ['./record.component.scss'],
 })
 export class RecordComponent {
+  dataSource: MatTableDataSource<Equipo>;
+  equipos: Equipo[] = [];
+  userid = JSON.parse(localStorage.getItem('userID')!);
+  constructor(private viajes: TravelsService) {
+    console.log(this.userid);
+
+    this.viajes.estado(this.userid).subscribe((resp) => {
+      this.equipos = resp;
+      this.dataSource = new MatTableDataSource(this.equipos);
+    });
+    this.dataSource = new MatTableDataSource(this.equipos);
+  }
   displayedColumns: string[] = [
     'fecha',
     'marca',
@@ -137,7 +29,6 @@ export class RecordComponent {
     'estadoEnvio',
     'entrega',
   ];
-  dataSource = new MatTableDataSource(TRIP_DATA);
 
   filtrar(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;

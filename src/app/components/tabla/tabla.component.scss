@@ -1,0 +1,62 @@
+main {
+//   min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mat-form-field {
+  margin-bottom: 1rem;
+  max-width: 50%;
+}
+.table-cont {
+  height: 100%;
+//   width: 85%;
+  max-width: 100%;
+  overflow: auto;
+  margin-bottom: 2rem;
+  border-radius: 0.25rem;
+}
+table {
+  background-color: bisque;
+  margin: 0 auto;
+}
+.mat-form-field {
+  width: 90%;
+}
+.mat-column-fecha {
+  font-size: 1rem;
+  width: 10%;
+  border-right: 1px solid rgb(56, 56, 56);
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.mat-column-marca {
+  font-size: 1rem;
+
+  width: 10%;
+  border-right: 1px solid rgb(56, 56, 56);
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.mat-column-modelo {
+  font-size: 1rem;
+
+  width: 10%;
+  border-right: 1px solid rgb(56, 56, 56);
+  text-align: center;
+  padding: 5px 10px;
+}
+.mat-column-estadoEquipo {
+  width: 10%;
+  border-right: 1px solid rgb(56, 56, 56);
+  text-align: center;
+  padding: 5px 10px;
+}
+.mat-column-estadoEnvio {
+  width: 10%;
+  text-align: center;
+  padding: 5px 10px;
+}

@@ -24,7 +24,7 @@ export class TravelsService {
     );
   }
 
-  estado(id: string | null): Observable<Equipo[]> {
+  estado(id:number): Observable<Equipo[]> {
     return this.http.get<Equipo[]>('api/Equipment?clientId=' + id);
   }
 }

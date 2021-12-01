@@ -6,27 +6,21 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-
-
-
-
+import { TablaComponent } from './tabla/tabla.component';
 
 @NgModule({
   declarations: [
     InicioSesionComponent,
     FooterComponent,
     HeaderComponent,
+    TablaComponent,
   ],
-  imports: [
-    CommonModule,
-    MaterialModule,
-    RouterModule,
-    ReactiveFormsModule,
-  ],
+  imports: [CommonModule, MaterialModule, RouterModule, ReactiveFormsModule],
   exports: [
     InicioSesionComponent,
     FooterComponent,
     HeaderComponent,
+    TablaComponent,
   ],
 })
 export class ComponentsModule {}

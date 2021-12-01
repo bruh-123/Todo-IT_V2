@@ -12,7 +12,7 @@ export class TripComponent {
   formTrip: FormGroup;
   isLoading = false;
   userloged = localStorage.getItem('userLoged');
-  userid = localStorage.getItem('userID');
+  userid = JSON.parse(localStorage.getItem('userID')!);
 
   constructor(
     private fb: FormBuilder,
