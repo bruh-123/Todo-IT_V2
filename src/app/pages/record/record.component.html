@@ -13,6 +13,7 @@
           {{ element.travelEquipmentDTOs[0].operationDate | date: "dd-MM" }}
         </td>
       </ng-container>
+
       <ng-container matColumnDef="marca">
         <th mat-header-cell *matHeaderCellDef>Marca</th>
         <td mat-cell *matCellDef="let element">{{ element.mark }}</td>
@@ -29,6 +30,8 @@
           {{
             element.travelEquipmentDTOs[element.travelEquipmentDTOs.length - 1]
               .statusTravel
+              | number
+              | i18nSelect: equiposMap
           }}
         </td>
       </ng-container>
@@ -39,14 +42,16 @@
           {{
             element.travelEquipmentDTOs[element.travelEquipmentDTOs.length - 1]
               .statusTravel
+              | number
+              | i18nSelect: viajesMap
           }}
         </td>
       </ng-container>
 
-      <ng-container matColumnDef="entrega">
+      <ng-container matColumnDef="entrega" >
         <th mat-header-cell *matHeaderCellDef>Fecha de entrega</th>
         <td mat-cell *matCellDef="let element">
-          {{ element.entrega | date: "dd-MM" }}
+          {{ element. | date: "dd-MM" }}
         </td>
       </ng-container>
 
