@@ -14,16 +14,19 @@ h1 {
   margin-bottom: 1rem;
   max-width: 50%;
 }
-.filter{
+.mat-card {
   background-color: bisque;
-}
-.table-cont {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 85%;
-  max-width: 100%;
+  max-width: 60rem;
   overflow: auto;
   margin-bottom: 2rem;
-  border-radius: 0.25rem;
+}
+.table-cont {
+  overflow: auto;
 }
 table {
   background-color: bisque;

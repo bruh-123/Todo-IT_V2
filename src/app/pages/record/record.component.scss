@@ -15,13 +15,19 @@ h1 {
   max-width: 50%;
 }
 
-.contain {
-  height: 100%;
+.mat-card {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 85%;
-  max-width: 100%;
+  max-width: 60rem;
   overflow: auto;
   margin-bottom: 2rem;
-  border-radius: 0.25rem;
+}
+.table-cont {
+  overflow: auto;
 }
 table {
   background-color: bisque;

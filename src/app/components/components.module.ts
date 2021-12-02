@@ -6,21 +6,21 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { TablaComponent } from './tabla/tabla.component';
+import { FechaEntregaPipe } from '../Pipes/fecha-entrega.pipe';
 
 @NgModule({
   declarations: [
     InicioSesionComponent,
     FooterComponent,
     HeaderComponent,
-    TablaComponent,
+    FechaEntregaPipe,
   ],
   imports: [CommonModule, MaterialModule, RouterModule, ReactiveFormsModule],
   exports: [
     InicioSesionComponent,
     FooterComponent,
     HeaderComponent,
-    TablaComponent,
+    FechaEntregaPipe,
   ],
 })
 export class ComponentsModule {}

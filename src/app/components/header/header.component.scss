@@ -2,12 +2,15 @@
 @use "sass:map";
 
 header {
-  height: 4rem;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
   background-color: bisque;
+}
+
+.logo {
+  height: 5rem;
 }
 
 .btn {
@@ -21,4 +24,11 @@ header {
 
 .btn:hover {
   background-color: blue;
+}
+
+@media (min-width:768px){
+  .btn{
+    display:none;
+  }
+  
 }

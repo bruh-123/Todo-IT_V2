@@ -37,8 +37,6 @@ export class RecordComponent {
   equipos: Equipo[] = [];
   userid = JSON.parse(localStorage.getItem('userID')!);
   constructor(private viajes: TravelsService) {
-    console.log(this.userid);
-
     this.viajes.estado(this.userid).subscribe((resp) => {
       this.equipos = resp;
       this.dataSource = new MatTableDataSource(this.equipos);
