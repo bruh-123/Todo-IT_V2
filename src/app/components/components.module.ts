@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { FechaEntregaPipe } from '../Pipes/fecha-entrega.pipe';
+import { FechaEntregaPipe } from '../pipes/fecha-entrega.pipe';
 
 @NgModule({
   declarations: [
