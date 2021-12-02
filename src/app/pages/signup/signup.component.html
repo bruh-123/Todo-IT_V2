@@ -19,13 +19,14 @@
         <mat-error></mat-error>
       </mat-form-field>
       <mat-form-field class="field" appearance="fill">
-        <mat-label>Contreseña</mat-label>
+        <mat-label>Contraseña</mat-label>
         <input
           matInput
           [type]="hide ? 'password' : 'text'"
           formControlName="password"
         />
         <button
+          type="button"
           mat-icon-button
           matSuffix
           (click)="hide = !hide"
