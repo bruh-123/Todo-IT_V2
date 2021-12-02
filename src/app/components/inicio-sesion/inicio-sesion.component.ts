@@ -34,6 +34,7 @@ export class InicioSesionComponent {
         (resp) => {
           console.log(resp);
           localStorage.setItem('userLoged', JSON.stringify(resp.email));
+          localStorage.setItem('userName',JSON.stringify(resp.fullName))
           localStorage.setItem('userID', JSON.stringify(resp.id));
           this.router.navigate(['/home']);
         },

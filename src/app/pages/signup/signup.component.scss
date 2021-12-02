@@ -3,8 +3,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('../../../assets/background.png');
-
+  background: url("../../../assets/background.png") center/cover no-repeat;
 }
 .signup {
   border-radius: 0.5rem;

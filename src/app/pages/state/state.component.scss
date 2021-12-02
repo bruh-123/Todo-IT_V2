@@ -4,7 +4,10 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../../../assets/background.png");
+  background: url("../../../assets/background.png") center/cover no-repeat;
+}
+.title{
+  margin: 2rem;
 }
 h1 {
   font-size: 2rem;

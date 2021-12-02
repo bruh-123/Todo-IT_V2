@@ -6,8 +6,18 @@ main {
   flex-direction: column;
   text-align: center;
   padding: 3rem 2rem;
-  background-image: url("../../../assets/background.png");
+  background: url("../../../assets/background.png") center/cover no-repeat;
 }
+.title{
+  background-color: bisque;
+  padding: 3rem;
+  margin: 2rem;
+}
+h1{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
 .content {
   display: grid;
   gap: 2rem 2rem;
