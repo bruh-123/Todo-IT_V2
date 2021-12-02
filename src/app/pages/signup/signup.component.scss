@@ -3,7 +3,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: bisque;
+  background-image: url('../../../assets/background.png');
+
 }
 .signup {
   border-radius: 0.5rem;
@@ -12,11 +13,11 @@ main {
   max-width: 20.5rem;
   border-radius: 0.25rem;
   margin: 3rem 5rem;
+  background-color: bisque;
 }
 .field {
   width: 75%;
 }
-
 
 .btn-form {
   width: 75%;

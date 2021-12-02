@@ -9,6 +9,30 @@ import { TravelsService } from '../../services/travels.service';
   styleUrls: ['./state.component.scss'],
 })
 export class StateComponent {
+  equiposMap = {
+    '1': 'A Reparar',
+    '2': 'A Reparar',
+    '3': 'A Reparar',
+    '4': 'A Reparar',
+    '5': 'Reparado',
+    '6': 'Reparado',
+    '7': 'Reparado',
+    '8': 'Reparado',
+    '9': 'Reparado',
+    '10': 'A Reparar',
+  };
+  viajesMap = {
+    '1': 'Pendiente',
+    '2': 'Pendiente',
+    '3': 'En Curso',
+    '4': 'Pendiente',
+    '5': 'En Curso',
+    '6': 'Pendiente',
+    '7': 'Pendiente',
+    '8': 'En Curso',
+    '9': 'Entregado',
+    '10': 'Pendiente',
+  };
   dataSource: MatTableDataSource<Equipo>;
   equipos: Equipo[] = [];
   userid = JSON.parse(localStorage.getItem('userID')!);

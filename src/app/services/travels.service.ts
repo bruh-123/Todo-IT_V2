@@ -12,15 +12,7 @@ export class TravelsService {
 
   solicitar(trip: TripData): Observable<TripData> {
     return this.http.post<TripData>(
-      'api/Retirement?clientId=' +
-        trip.id +
-        '&mark=' +
-        trip.marca +
-        '&model=' +
-        trip.modelo +
-        '&failure=' +
-        trip.falla,
-      trip
+      'api/Retirement?clientId=' +trip.id +'&mark=' + trip.marca +  '&model=' +  trip.modelo +  '&failure=' +  trip.falla,  trip
     );
   }
 

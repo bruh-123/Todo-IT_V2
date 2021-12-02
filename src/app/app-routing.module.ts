@@ -6,6 +6,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { TripComponent } from './pages/trip/trip.component';
 import { StateComponent } from './pages/state/state.component';
 import { RecordComponent } from './pages/record/record.component';
+import { VigilanteGuard } from './vigilante.guard';
 
 const routes: Routes = [
   {
@@ -19,18 +20,22 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
+    canActivate: [VigilanteGuard],
   },
   {
     path: 'trip',
     component: TripComponent,
+    canActivate: [VigilanteGuard],
   },
   {
     path: 'state',
     component: StateComponent,
+    canActivate: [VigilanteGuard],
   },
   {
     path: 'record',
     component: RecordComponent,
+    canActivate: [VigilanteGuard],
   },
   {
     path: '**',

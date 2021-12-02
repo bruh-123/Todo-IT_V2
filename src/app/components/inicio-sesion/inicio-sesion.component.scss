@@ -3,7 +3,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: bisque;
+  background-image: url("../../../assets/background.png");
 }
 
 .login {
@@ -11,6 +11,7 @@ main {
   text-align: center;
   width: 80%;
   max-width: 20.5rem;
+  background-color: bisque;
 }
 
 .field {

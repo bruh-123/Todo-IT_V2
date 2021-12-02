@@ -7,10 +7,16 @@ import { User } from '../interfaces/users';
   providedIn: 'root',
 })
 export class ValidateUserService {
-  constructor(private http:HttpClient) {}
+  constructor(private http: HttpClient) { }
+  
   login(email: string, password: string): Observable<User> {
     return this.http.get<User>(
       'api/Login' + '?email=' + email + '&password=' + password
     );
+  }
+
+  check():boolean {
+    const userloged :string|null= localStorage.getItem('userID');
+    return userloged ? true : false;
   }
 }

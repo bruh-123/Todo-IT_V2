@@ -6,37 +6,55 @@
     <mat-icon>menu</mat-icon>
   </button>
   <mat-menu [class]="'menu'" #menu="matMenu">
-    
     <a
+      *ngIf="isLoged"
       [routerLink]="['/home']"
       routerLinkActive="router-link-active"
       mat-menu-item
       >Inicio</a
     >
     <a
+      *ngIf="isLoged"
       [routerLink]="['/trip']"
       routerLinkActive="router-link-active"
       mat-menu-item
       >Solicitar viaje</a
     >
     <a
+      *ngIf="isLoged"
       [routerLink]="['/state']"
       routerLinkActive="router-link-active"
       mat-menu-item
       >Estado del viaje</a
     >
     <a
+      *ngIf="isLoged"
       [routerLink]="['/record']"
       routerLinkActive="router-link-active"
       mat-menu-item
       >Historial</a
     >
     <a
+      *ngIf="isLoged"
       [routerLink]="['/login']"
       routerLinkActive="router-link-active"
       mat-menu-item
       (click)="signOut()"
       >Cerrar Sesión</a
+    >
+    <a
+      *ngIf="!isLoged"
+      [routerLink]="['/login']"
+      routerLinkActive="router-link-active"
+      mat-menu-item
+      >Iniciar Sesión</a
+    >
+    <a
+      *ngIf="!isLoged"
+      [routerLink]="['/signup']"
+      routerLinkActive="router-link-active"
+      mat-menu-item
+      >Registrarse</a
     >
   </mat-menu>
 </header>
