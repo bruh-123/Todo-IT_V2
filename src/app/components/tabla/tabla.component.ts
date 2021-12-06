@@ -37,21 +37,15 @@ export class TablaComponent implements OnInit {
   dataSource: MatTableDataSource<Equipo>;
   equipos: Equipo[] = [];
   userid = JSON.parse(localStorage.getItem('userID')!);
+  
   constructor(private viajes: TravelsService) {
     this.viajes.estado(this.userid).subscribe((resp) => {
-      this.equipos = resp;
+      this.equipos = resp.reverse();
       this.dataSource = new MatTableDataSource(this.equipos);
     });
     this.dataSource = new MatTableDataSource(this.equipos);
   }
-  @Input() displayedColumns: string[]=[];
-  // displayedColumns = [
-  //   'fecha',
-  //   'marca',
-  //   'modelo',
-  //   'estadoEquipo',
-  //   'estadoEnvio',
-  // ];
+  @Input() displayedColumns: string[] = [];
 
   filtrar(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
