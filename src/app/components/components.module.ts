@@ -5,8 +5,9 @@ import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from '../header/header.component';
 import { FechaEntregaPipe } from '../pipes/fecha-entrega.pipe';
+import { TablaComponent } from './tabla/tabla.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { FechaEntregaPipe } from '../pipes/fecha-entrega.pipe';
     FooterComponent,
     HeaderComponent,
     FechaEntregaPipe,
+    TablaComponent,
   ],
   imports: [CommonModule, MaterialModule, RouterModule, ReactiveFormsModule],
   exports: [
@@ -21,6 +23,7 @@ import { FechaEntregaPipe } from '../pipes/fecha-entrega.pipe';
     FooterComponent,
     HeaderComponent,
     FechaEntregaPipe,
+    TablaComponent,
   ],
 })
 export class ComponentsModule {}

@@ -6,7 +6,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { TripComponent } from './pages/trip/trip.component';
 import { StateComponent } from './pages/state/state.component';
 import { RecordComponent } from './pages/record/record.component';
-import { VigilanteGuard } from './vigilante.guard';
+import { VigilanteGuard } from './guards/vigilante.guard';
 
 const routes: Routes = [
   {

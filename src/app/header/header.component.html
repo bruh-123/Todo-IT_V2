@@ -1,0 +1,129 @@
+<header>
+  <img src="../../../assets/logo.svg" alt="logo" class="logo" />
+  <div class="nav-links">
+    <a
+      class="nav-btn"
+      *ngIf="isLoged"
+      [routerLink]="['/home']"
+      routerLinkActive="router-link-active"
+      mat-raised-button
+      color="primary"
+      >Home</a
+    >
+    <a
+      class="nav-btn"
+      *ngIf="isLoged"
+      [routerLink]="['/trip']"
+      routerLinkActive="router-link-active"
+      mat-raised-button
+      color="primary"
+      >Solicitar viaje</a
+    >
+    <a
+      class="nav-btn"
+      *ngIf="isLoged"
+      [routerLink]="['/state']"
+      routerLinkActive="router-link-active"
+      mat-raised-button
+      color="primary"
+      >Estado del viaje</a
+    >
+    <a
+      class="nav-btn"
+      *ngIf="isLoged"
+      [routerLink]="['/record']"
+      routerLinkActive="router-link-active"
+      mat-raised-button
+      color="primary"
+      >Historial</a
+    >
+    <a
+      class="nav-btn"
+      *ngIf="isLoged"
+      [routerLink]="['/login']"
+      routerLinkActive="router-link-active"
+      mat-raised-button
+      color="primary"
+      (click)="signOut()"
+      >Cerrar Sesión</a
+    >
+    <a
+      class="nav-btn"
+      *ngIf="!isLoged"
+      [routerLink]="['/login']"
+      routerLinkActive="router-link-active"
+      mat-raised-button
+      color="primary"
+      >Iniciar Sesión</a
+    >
+    <a
+      class="nav-btn"
+      *ngIf="!isLoged"
+      [routerLink]="['/signup']"
+      routerLinkActive="router-link-active"
+      mat-raised-button
+      color="primary"
+      >Registrarse</a
+    >
+  </div>
+  <button
+    mat-raised-button
+    [matMenuTriggerFor]="menu"
+    color="primary"
+    class="btn"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu [class]="'menu'" #menu="matMenu">
+    <a
+      *ngIf="isLoged"
+      [routerLink]="['/home']"
+      routerLinkActive="router-link-active"
+      mat-menu-item
+      >Home</a
+    >
+    <a
+      *ngIf="isLoged"
+      [routerLink]="['/trip']"
+      routerLinkActive="router-link-active"
+      mat-menu-item
+      >Solicitar viaje</a
+    >
+    <a
+      *ngIf="isLoged"
+      [routerLink]="['/state']"
+      routerLinkActive="router-link-active"
+      mat-menu-item
+      >Estado del viaje</a
+    >
+    <a
+      *ngIf="isLoged"
+      [routerLink]="['/record']"
+      routerLinkActive="router-link-active"
+      mat-menu-item
+      >Historial</a
+    >
+    <a
+      *ngIf="isLoged"
+      [routerLink]="['/login']"
+      routerLinkActive="router-link-active"
+      mat-menu-item
+      (click)="signOut()"
+      >Cerrar Sesión</a
+    >
+    <a
+      *ngIf="!isLoged"
+      [routerLink]="['/login']"
+      routerLinkActive="router-link-active"
+      mat-menu-item
+      >Iniciar Sesión</a
+    >
+    <a
+      *ngIf="!isLoged"
+      [routerLink]="['/signup']"
+      routerLinkActive="router-link-active"
+      mat-menu-item
+      >Registrarse</a
+    >
+  </mat-menu>
+</header>
