@@ -5,77 +5,21 @@ main {
   justify-content: center;
   align-items: center;
   background: url("../../../assets/background.png") center/cover no-repeat;
+  overflow: auto;
 }
-.title{
+.title {
   margin: 2rem;
 }
 h1 {
   font-size: 2rem;
   margin: 2rem;
 }
-.mat-form-field {
-  margin-bottom: 1rem;
-  max-width: 50%;
-}
 
 .mat-card {
   background-color: bisque;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 85%;
-  max-width: 60rem;
-  overflow: auto;
-  margin-bottom: 2rem;
-}
-.table-cont {
-  overflow: auto;
-}
-table {
-  background-color: bisque;
-  margin: 0 auto;
-}
-.mat-form-field {
-  width: 90%;
-}
-.mat-column-fecha {
-  font-size: 1rem;
-  width: 10%;
-  border-right: 1px solid rgb(56, 56, 56);
-  text-align: center;
-  padding: 5px 10px;
 }
 
-.mat-column-marca {
-  font-size: 1rem;
-  width: 10%;
-  border-right: 1px solid rgb(56, 56, 56);
-  text-align: center;
-  padding: 5px 10px;
-}
-
-.mat-column-modelo {
-  font-size: 1rem;
-  width: 10%;
-  border-right: 1px solid rgb(56, 56, 56);
-  text-align: center;
-  padding: 5px 10px;
-}
-.mat-column-estadoEquipo {
-  width: 10%;
-  border-right: 1px solid rgb(56, 56, 56);
-  text-align: center;
-  padding: 5px 10px;
-}
-.mat-column-estadoEnvio {
-  border-right: 1px solid rgb(56, 56, 56);
-  width: 10%;
-  text-align: center;
-  padding: 5px 10px;
-}
-.mat-column-entrega {
-  width: 10%;
-  text-align: center;
-  padding: 5px 10px;
+app-tabla {
+  width: 80%;
+  max-width: 100%;
 }

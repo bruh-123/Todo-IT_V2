@@ -1,3 +1,5 @@
+import { User } from './users';
+
 export interface Equipo {
   equipmentId: number;
   mark: string;
@@ -6,16 +8,10 @@ export interface Equipo {
   travelEquipmentDTOs: [
     {
       id: number;
-      operationDate: Date;
+      operationDate: string;
       observation: string;
-      cadete: string;
-      operator: {
-        id: number;
-        email: string;
-        fullName: string;
-        address: string;
-        cellPhone: string;
-      };
+      cadete: User;
+      operator: User;
       equipment: string;
       statusTravel: number;
     }

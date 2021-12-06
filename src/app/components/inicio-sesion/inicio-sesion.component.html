@@ -1,18 +1,17 @@
 <main>
-  <mat-spinner
-    *ngIf="isLoading"
-    class="spinner"
-    [diameter]="50"
-  ></mat-spinner>
+  <mat-spinner *ngIf="isLoading" class="spinner" [diameter]="50"></mat-spinner>
   <mat-card *ngIf="!isLoading" class="login">
     <form [formGroup]="loginform" (ngSubmit)="ingresar()">
       <img src="../../../assets/user.png" alt="" width="50%" />
       <h1>login</h1>
+      <!-- ------EMAIL -->
       <mat-form-field class="field" appearance="fill">
         <mat-label>Email</mat-label>
         <input matInput autocomplete="off" formControlName="email" />
         <mat-icon matSuffix>alternate_email</mat-icon>
+        <!-- <mat-error *ngIf="submitted ">{{getErrorMessage()}}</mat-error> -->
       </mat-form-field>
+      <!-- ---------PASSWORD -->
       <mat-form-field class="field" appearance="fill">
         <mat-label>Contraseña</mat-label>
         <input
@@ -25,13 +24,8 @@
           <mat-icon>{{ hide ? "visibility" : "visibility_off" }}</mat-icon>
         </button>
       </mat-form-field>
-      <button
-        [disabled]="loginform.invalid"
-        type="submit"
-        mat-raised-button
-        class="btn"
-        color="primary"
-      >
+      <!-- -----BOTONES -->
+      <button type="submit" mat-raised-button class="btn" color="primary">
         Iniciar Sesión
       </button>
       <p>
